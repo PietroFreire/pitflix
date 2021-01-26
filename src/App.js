@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {HeaderPit, Wrapper} from './components/HeaderPit';
+import LogoPit from './components/LogoPitflix';
+import ButtonPit from './components/ButtonPit';
+import FooterPit from './components/FooterPit';
+import LinkPit from './components/LinkPit';
+import {BannerPit, Text} from './components/BannerPit';
+import TagPit from './components/TagPit';
+import TitlePit from './components/TitlePit';
+import DescriptionPit from './components/TitlePit/DescriptionPit';
+import ThumbPit from './components/ThumbPit';
+import Marco from './assets/img/MarcoBruno.png';
+// import marcoBruno from './assets/img/MarcoBruno.png';
 
+// JSX = (J)ava(S)cript (X)ML
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+    <>  
+      <HeaderPit>
+        <Wrapper>
+          <LogoPit />
+
+          <ButtonPit>Novo Video</ButtonPit>
+        </Wrapper>
+      </HeaderPit>
+
+      <BannerPit>
+        <Text> 
+          <TagPit>FrontEnd</TagPit>
+          <TitlePit>Maratona para lançamento da FiredLabs</TitlePit>
+          <DescriptionPit>Marco Bruno, neste video fez uma maratona de lancamento da plataforma FiredLabs.
+          </DescriptionPit>
+        </Text>
+
+        <ThumbPit 
+        src={Marco} 
+        alt="Thumb do Marco Bruno"
+        // avatar={marcoBruno}
+        />
+      </BannerPit>
+
+
+      <FooterPit>
+        <LogoPit/>
+        <p>Feito com 💙 por <LinkPit href="www.pietrofreire.com" target="_blank" >Pietro Freire</LinkPit></p>
+      </FooterPit>
+    </>
   );
 }
 
