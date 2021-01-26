@@ -9,7 +9,8 @@ import TagPit from './components/TagPit';
 import TitlePit from './components/TitlePit';
 import DescriptionPit from './components/TitlePit/DescriptionPit';
 import ThumbPit from './components/ThumbPit';
-import Marco from './assets/img/MarcoBruno.png';
+import MarcoBruno from './assets/img/MarcoBruno.png';
+import Marco from './assets/img/Marco.jpg';
 // import marcoBruno from './assets/img/MarcoBruno.png';
 
 // JSX = (J)ava(S)cript (X)ML
@@ -33,9 +34,10 @@ function App() {
         </Text>
 
         <ThumbPit 
-        src={Marco} 
+        src={MarcoBruno} 
         alt="Thumb do Marco Bruno"
-        // avatar={marcoBruno}
+        avatar={Marco}
+        channelName="MarcoBrunoDev"
         />
       </BannerPit>
 
