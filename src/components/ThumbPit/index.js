@@ -1,12 +1,13 @@
 import React from 'react';
-import { Background, Thumb, WrapperThumb, Avatar } from './style';
+import AvatarPit from '../AvatarPit';
+import { Background, Thumb, WrapperThumb } from './style';
 
 function ThumbPit({ src, alt, avatar, channelName }){
     return(
         <Background>
             <WrapperThumb>
                 <Thumb src={src} alt={alt} />
-                <Avatar src={avatar} alt={channelName} />
+                <AvatarPit photo={avatar} channelName={channelName} />
             </WrapperThumb>
         </Background>
     );
