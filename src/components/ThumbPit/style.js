@@ -1,5 +1,15 @@
 import styled from 'styled-components';
-import { Avatar, WrapperAvatar } from '../AvatarPit/styles';
+import { WrapperAvatar } from '../AvatarPit/styles';
+
+export const Timer = styled.span`
+    position: absolute;
+    right: var(--space);
+    bottom: var(--space);
+    font-size: 18rem;
+    color: var(--color-gray-light);
+    background-color: var(--color-black-medium);
+    padding: 2rem 4rem;
+`;
 
 export const Title = styled.figcaption`
     position: absolute;

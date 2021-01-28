@@ -1,8 +1,8 @@
 import React from 'react';
 import AvatarPit from '../AvatarPit';
-import { Background, Thumb, WrapperThumb, Title } from './style';
+import { Background, Thumb, WrapperThumb, Title, Timer } from './style';
 
-function ThumbPit({ src, alt, avatar, channelName, title }){
+function ThumbPit({ src, alt, avatar, channelName, title, timer }){
 
     return(
         <Background>
@@ -10,6 +10,7 @@ function ThumbPit({ src, alt, avatar, channelName, title }){
                 <Thumb src={src} alt={alt} />
                 <AvatarPit photo={avatar} channelName={channelName} />
                 <Title>{title}</Title>
+                <Timer>{timer}</Timer>
             </WrapperThumb>
         </Background>
     );

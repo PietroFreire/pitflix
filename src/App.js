@@ -38,6 +38,7 @@ function App() {
         title="Maratona para lançamento da FiredLabs"
         avatar={Marco}
         channelName="MarcoBrunoDev"
+        timer="02:20:34"
         />
       </BannerPit>
 
