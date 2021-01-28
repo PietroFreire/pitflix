@@ -15,7 +15,7 @@ export const HeaderPit = styled.header`
 `;
 
 export const Wrapper = styled.div`
-    ${container}
+    ${container} //Usa as configuracoes de estilo impostas na variavel container.
     display: flex;
     justify-content: space-between;
     align-items: center;

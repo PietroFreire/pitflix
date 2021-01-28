@@ -17,7 +17,7 @@ export const Text = styled.div`
 `;
 
 export const BannerPit = styled.section`
-    ${container};
+    ${container}; //Usa as configuracoes de estilo impostas na variavel container.
     display: flex;
     justify-content: space-between;
     align-items: center;

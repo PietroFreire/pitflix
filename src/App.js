@@ -11,7 +11,6 @@ import DescriptionPit from './components/TitlePit/DescriptionPit';
 import ThumbPit from './components/ThumbPit';
 import MarcoBruno from './assets/img/MarcoBruno.png';
 import Marco from './assets/img/Marco.jpg';
-// import marcoBruno from './assets/img/MarcoBruno.png';
 
 // JSX = (J)ava(S)cript (X)ML
 function App() {
