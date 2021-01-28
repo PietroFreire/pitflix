@@ -35,6 +35,7 @@ function App() {
         <ThumbPit 
         src={MarcoBruno} 
         alt="Thumb do Marco Bruno"
+        title="Maratona para lançamento da FiredLabs"
         avatar={Marco}
         channelName="MarcoBrunoDev"
         />
